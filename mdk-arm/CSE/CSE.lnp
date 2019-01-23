@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp
+"cse\startup_stm32f411xe.o"
+"cse\cse7761.o"
+"cse\main.o"
+"cse\stm32f4xx_it.o"
+"cse\stm32f4xx_hal_msp.o"
+"cse\stm32f4xx_hal_tim.o"
+"cse\stm32f4xx_hal_tim_ex.o"
+"cse\stm32f4xx_hal_rcc.o"
+"cse\stm32f4xx_hal_rcc_ex.o"
+"cse\stm32f4xx_hal_flash.o"
+"cse\stm32f4xx_hal_flash_ex.o"
+"cse\stm32f4xx_hal_flash_ramfunc.o"
+"cse\stm32f4xx_hal_gpio.o"
+"cse\stm32f4xx_hal_dma_ex.o"
+"cse\stm32f4xx_hal_dma.o"
+"cse\stm32f4xx_hal_pwr.o"
+"cse\stm32f4xx_hal_pwr_ex.o"
+"cse\stm32f4xx_hal_cortex.o"
+"cse\stm32f4xx_hal.o"
+"cse\system_stm32f4xx.o"
+"cse\retarget_io.o"
+--library_type=microlib --strict --scatter "CSE\CSE.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "CSE.map" -o CSE\CSE.axf
